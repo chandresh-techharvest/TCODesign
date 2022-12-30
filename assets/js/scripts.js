@@ -443,6 +443,14 @@ PAGE JS
 		mainClass: 'mfp-zoom-in',
 	});
 	
+	$('.right_popup_link').magnificPopup({
+		type: 'inline',
+		midClick: true,
+		preloader: true,
+		removalDelay: 400,
+		mainClass: 'mfp-zoom-in right_popup mfp-fade',
+	});
+	
 	$('.image_gallery').each(function() { // the containers for all your galleries
 		$(this).magnificPopup({
 			delegate: 'a', // the selector for gallery item
@@ -526,8 +534,10 @@ PAGE JS
 	});
 	
 	
-		
-	$(document).on("ready", function() {	
+	
+	$(document).on("ready", function() {
+		var $custom_timeline = $('.timeline');
+		if ($custom_timeline.length > 0) {	
 		$(() => {
 		  let stickyTop = 100,
 		  scrollTarget = false;
@@ -602,8 +612,9 @@ PAGE JS
 			  active = scrollTarget;
 			}
 			
-			if ($(window).width() < 767) {
-				timeline.css('left', -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + 'px');
+			if ($(window).width() < 768) {
+				
+				timeline.css('left', -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start - 200 + 'px');
 			} else {
 				timeline.css('top', -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + 'px');
         	}
@@ -614,6 +625,7 @@ PAGE JS
 			items.eq(active != -1 ? active : 0).addClass('active');
 		  }).trigger('scroll');
 		});	
+		};
 	});	
 	
 })(jQuery);
