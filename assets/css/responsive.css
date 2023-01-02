@@ -1285,10 +1285,78 @@ footer .widget_title {
 .flex_title {
 	margin-bottom: 15px;
 }
+.slide_section .slide_content p, .right_popup .side_popup_content .side_popup_description p {
+	font-size: 16px;
+}
+
+.heading_s1 h1, .heading_s1 h2.h1 {
+	font-size: 26px;
+}
 .heading_s1 h2, .flex_title h2{
-	font-size: 30px;
+	font-size: 22px;
 	line-height: normal;
 }
+.large_text p {
+	font-size: 16px;
+}
+.large_text li,
+.slide_section .slide_content ul li {
+	font-size: 16px;
+}
+.btn-link {
+	font-size: 16px;
+}
+.btn-link i {
+	font-size: 20px;
+}
+.file_group .pdf-link {
+	font-size: 16px;
+}
+.card_box .card_number h3,
+.card_box .card_title h4 {
+	font-size: 18px;
+}
+.slide_section li.nav-item a {
+	font-size: 18px;
+}
+.slide_section .tab-content {
+	position: static;
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	text-align: center !important;
+}
+
+.list_style1 li {
+	margin-bottom: 10px;	
+}
+.report_card_box_wrap .report_card .report_card_text h3 {
+	font-size: 18px;
+}
+.report_section .card_box .card_content p {
+	font-size: 16px;
+}
+.tco_icon_box .tco_icon_text h4 {
+	font-size: 18px;
+}
+.tco_icon_box .tco_icon_text h3 {
+	font-size: 18px;
+}
+.tco_icon_box .tco_icon_text p {
+	font-size: 16px;
+}
+.timeline__nav ul li {
+	font-size:20px;
+}
+.timeline__section h3 {
+	font-size: 18px;
+}
+
+footer p,
+.widget_links li a {
+	font-size: 16px;
+}
+
 .leads {
 	margin-bottom: 15px;
 }
@@ -1328,19 +1396,19 @@ footer .widget_title {
 ---------------------------------------------------*/
 @media only screen and (max-width: 575px) {
 .heading_s1 h1, .heading_s1 h2.h1 {
-	font-size: 30px;
+	font-size: 24px;
 }	
 .tco__partners-wrapper h1 {
-	font-size: 30px;
+	font-size: 24px;
 }
 .tco__partners-wrapper h3 {
-  font-size: 30px;
+  font-size: 24px;
 }
 .tco_icon_box .tco_icon_text h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .tco_icon_box .tco_icon_text h3 {
-	font-size: 24px;
+	font-size: 18px;
 }
 .section.pt_40, .pt_40 {
 	padding-top: 20px;

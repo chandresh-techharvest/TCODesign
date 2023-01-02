@@ -3573,20 +3573,30 @@ input.text {
   06.START LIST STYLE
 *===================================*/
 .list_style1 li::before {
-	content: "\f121";
-	font-family: ionicons;
+	content: "";
 	left: 0;
 	position: absolute;
-	top: 7px;
-	color: #ed1c24;
+	top: 12px;
+	background-color: #00B0F0;
 	text-align: center;
 	font-size: 16px;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
 }
 .list_style1 li {
 	list-style: outside none none;
 	padding: 5px 0px 5px 25px;
 	position: relative;
+	margin-bottom: 20px;
 }
+.list_style1 li:last-child {
+	margin-bottom: 0px;
+}
+.large_text li {
+	font-size:20px;
+}
+
 .list_style2 li::before {
 	content: "";
 	left: 0;
@@ -7154,7 +7164,8 @@ blockquote p:last-child {
 .slide_section .slide_content p{
 	font-size:20px;
 }
-.slide_section .slide_img {
+.slide_section .slide_img,
+.slide_section .slide_icon {
 	display: flex;
 	align-items: center;
 	overflow: hidden;
@@ -7170,7 +7181,10 @@ blockquote p:last-child {
 	-o-object-fit: cover;
 	object-fit: cover;
 }
-
+.slide_section .slide_icon img {
+	position:static;
+	margin:0 auto;
+}
 .slide_section .nav_style8.owl-theme .owl-nav {
 	position: static;
 	text-align: left;
@@ -7236,10 +7250,26 @@ blockquote p:last-child {
 	margin-bottom: 40px;
 	padding-top: 30px;
 }
+.right_popup .side_popup_content .side_popup_description h3 {
+	color: #30454e;
+}
 .right_popup .side_popup_content .side_popup_description p {
 	font-size: 20px;
 	color: #30454e;
 	white-space: pre-line;
+}
+.right_popup .side_popup_content .side_popup_description ul,
+.right_popup .side_popup_content .side_popup_description ol {
+	padding-left: 22px;
+	margin-bottom: 40px;
+}
+.right_popup .side_popup_content .side_popup_description ul li,
+.right_popup .side_popup_content .side_popup_description ol li {
+	font-size: 20px;
+	color: #30454e;
+}
+.right_popup .side_popup_content .side_popup_description ol > li {
+	margin-bottom:15px;
 }
 .right_popup .side_popup_content .side_popup_description img {
 	margin-bottom:40px;
@@ -7330,6 +7360,15 @@ blockquote p:last-child {
 }
 
 
+.slide_section .slide_content ul {
+	margin-bottom: 20px;
+	padding-left: 22px;
+}
+.slide_section .slide_content ul li{
+	color: #30454e;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
 .slide_section li.nav-item {
 	margin-bottom: 70px;
 }
@@ -7358,4 +7397,7 @@ blockquote p:last-child {
 	margin: 0;
 }
 
+.m-h-270 {
+	min-height:270px;
+}
 

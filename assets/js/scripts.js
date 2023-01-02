@@ -213,7 +213,7 @@ PAGE JS
 	
 	var topheaderHeight = $(".top-header").innerHeight();
 	var mainheaderHeight = $(".header_wrap").innerHeight();
-	var headerHeight = mainheaderHeight - topheaderHeight - 20;
+	var headerHeight = mainheaderHeight - topheaderHeight;
     $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function() {
 		$('a.page-scroll.active').removeClass('active');
 		$(this).closest('.page-scroll').addClass('active');
