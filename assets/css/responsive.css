@@ -192,8 +192,8 @@
 ---------------------------------------------------*/
 @media only screen and (min-width: 1200px) {
 	.container {
-		--width-container: 1170px;
-		max-width: 1170px;
+		--width-container: 1190px;
+		max-width: 1190px;
 	}
 }
 
@@ -206,7 +206,7 @@ p {
 	line-height: 22px;
 }
 .heading_s1 h2,
-.flex_title h2 {
+.flex_title h2, .tco__partners-wrapper h2 {
   font-size: 36px;
 }
 .heading_s1 h3 {
@@ -797,21 +797,33 @@ div.banner_large_pad {
 p{
 	margin-bottom:20px;
 }	
-.h1, h1 {
+.heading_s1 h1, .heading_s1 h2, .heading_s1 h3, .heading_s1 h4, .heading_s1 h5, .heading_s1 h6 {
+	line-height: 38px;
+}
+.h1, h1, .tco__partners-wrapper h1 {
     font-size: 32px;
 }
 .h2, h2 {
     font-size: 28px;
 }
-.h3, h3 {
-    font-size: 24px;
+.h3, h3, .tco__partners-wrapper h3, .tco_icon_box .tco_icon_text h3 {
+    font-size: 22px;
 }
-.h4, h4 {
+.h4, h4, .tco_icon_box .tco_icon_text h4, .card_box .card_title h4 {
     font-size: 20px;
 }
 .heading_s1 h1, .heading_s1 h2.h1 {
-    font-size: 40px;
+    font-size: 36px;
 }
+.heading_s1 h2, .flex_title h2, .tco__partners-wrapper h2, .slide_section li.nav-item a {
+	font-size: 28px;
+}
+
+.large_text p, .large_text a, .slide_section .slide_content ul li, .btn-link, .slide_section .slide_content p,.right_popup .side_popup_content .side_popup_description p, .debt_rating_list ul li, .large_text li, 
+.file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p {
+	font-size: 16px;
+}
+
 .header_wrap .navbar {
 	margin-left: 0;
 }
@@ -909,14 +921,9 @@ p{
 	height: 160px;
 	overflow: hidden;
 }
-.heading_s1 h2 {
-	font-size: 36px;
-}
+
 .flex_title {
 	margin-bottom: 20px;
-}
-.flex_title h2{
-	font-size: 36px;
 }
 .industries_box {
 	margin-bottom: 30px;
@@ -1135,7 +1142,6 @@ footer .widget_title {
 	padding: 15px;
 }
 .tco__partners-wrapper h2 {
-	font-size: 20px;
 	margin-bottom: 0;
 }
 .double-block div {
@@ -1228,10 +1234,6 @@ footer .widget_title {
 	flex-direction: column-reverse !important;
 }
 
-.slide_section .slide_content p,
-.right_popup .side_popup_content .side_popup_description p {
-	font-size: 18px;
-}
 .slide_section .nav_style8.owl-theme .owl-nav {
 	margin-top: 0;
 }
@@ -1255,6 +1257,17 @@ footer .widget_title {
 	position: static;
 }
 
+.debt_rating_list ul {
+	margin-bottom: 20px;
+}
+
+.slide_section .tab-content.text-right {
+	text-align: center !important;
+	position: static;
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
 
 }
 
@@ -1292,11 +1305,14 @@ footer .widget_title {
 .heading_s1 h1, .heading_s1 h2.h1 {
 	font-size: 26px;
 }
-.heading_s1 h2, .flex_title h2{
+.heading_s1 h2, .flex_title h2, .tco__partners-wrapper h2{
 	font-size: 22px;
 	line-height: normal;
 }
-.large_text p {
+.heading_s1 h5 {
+	font-size: 16px;
+}
+.large_text p, .large_text a {
 	font-size: 16px;
 }
 .large_text li,
@@ -1686,6 +1702,15 @@ blockquote p {
 .right_popup .white_popup .side_popup_content {
 	padding: 20px;
 }
+
+.debt_rating_list ul {
+	margin-bottom: 20px;
+}
+.debt_rating_list ul li {
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+
 
 }
 

@@ -6824,7 +6824,7 @@ blockquote p:last-child {
 .tco_new_box .card_content .cat_date span.red {
 	color:#D01D12;
 }
-.tco_new_box .card_content .cat_date span.skyblue {
+.tco_new_box .card_content .cat_date span.skyblue, .skyblue {
 	color:#00B0F0;
 }
 .tco_new_box .card_content .cat_date span.orange {
@@ -7201,7 +7201,7 @@ blockquote p:last-child {
 }
 
 
-.large_text p {
+.large_text p, .large_text a {
 	font-size:20px;
 }
 
@@ -7401,3 +7401,20 @@ blockquote p:last-child {
 	min-height:270px;
 }
 
+.slide_section .slide_content ul li a.btn-link {
+	color: #015467;
+}
+.slide_section .slide_content ul li a.btn-link:hover {
+	color: #00B0F0;
+}
+
+
+.debt_rating_list ul li{
+	list-style:none;
+	font-size: 18px;
+	color: #30454E;
+	margin-bottom: 10px;
+}
+.debt_rating_list ul li a{
+	text-decoration:underline;
+}
