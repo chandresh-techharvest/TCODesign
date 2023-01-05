@@ -10,7 +10,7 @@ html, body {
 }
 body {
 	background: #ffffff none repeat scroll 0 0;
-    color: #000;
+    color: #30454E;
 	font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -574,7 +574,7 @@ button:focus {
 	background-color: #f7f8fb !important;
 }
 .bg_light_blue {
-	background-color: #E8F8FE !important;
+	background-color: rgba(68, 208, 247, 0.1) !important;
 }
 .bg_light_blue2 {
 	background-color: #F4F9FC !important;
@@ -5878,7 +5878,7 @@ footer .widget_recent_post .post_img img {
 	padding: 5px 20px;
 }
 .tab-content {
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 }
 .tab-style1 .nav-tabs,
 .tab-style3 .nav-tabs {
@@ -6791,6 +6791,10 @@ blockquote p:last-child {
 	transition: .3s;
 	display:inline-block;
 }
+.news_tag_wrap .news_tag.active, .breadcrub_tag_wrap .breadcrub_tag.active {
+	background-color:#015467;
+	color:#fff;
+}
 .breadcrub_tag_wrap a span {
 	transform: rotate(45deg);
 	display: inline-block;
@@ -7417,4 +7421,137 @@ blockquote p:last-child {
 }
 .debt_rating_list ul li a{
 	text-decoration:underline;
+}
+
+.slide_section .contact_list ul {
+	padding-left:0;
+}
+.slide_section .contact_list ul li {
+	display: flex;
+	list-style:none;
+	margin-bottom:25px;
+}
+.contact_list li span {
+	color: #00B0F0;
+	display: inline-block;
+	font-size: 22px;
+	line-height: normal;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+.slide_section .contact_list li p {
+	font-size: 18px;
+	margin:0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.slide_section .slide_contact_img {
+	position:relative;
+}
+.slide_section .slide_contact_img span {
+	color: #fff;
+	position: absolute;
+	top: 15%;
+	right: 15%;
+}
+
+.contact_list2 {
+	display:flex;
+}
+.contact_list2 span{
+	font-size: 20px;
+	font-weight: 500;
+}
+.contact_list2 .item_phone {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.contact_list2 .item_phone span{
+	color: #0282a0;
+	font-weight: 400;
+}
+
+
+
+
+/*===================================*
+  START ACCORDION STYLE
+*===================================*/
+.accordion .card .card-header {
+	background-color: transparent;
+	padding: 0px;
+	margin: 0;
+}
+.accordion .card-header a {
+	padding: 15px 40px 15px 15px;
+	display: block;
+	line-height: normal;
+}
+.accordion .card-body p:last-child {
+	margin: 0;
+}
+.card-body p {
+	margin-bottom: 15px;
+}
+.accordion_style1.accordion .card {
+	background-color: transparent;
+	margin-bottom: 15px;
+	border-radius: 0;
+	border: 0;
+}
+.accordion_style1.accordion .card:last-child {
+	margin-bottom: 0;
+}
+.accordion_style1 .card-body {
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.accordion_style1 .card-body p{
+
+}
+.accordion.accordion_style1 .card-header a {
+	font-family: 'Roboto', sans-serif;
+	font-size:24px;
+	font-weight: 700;
+}
+.accordion_style1 .card-header a::after {
+	content: "\ec39";
+	font-family: "Linearicons";
+	font-size: 16px;
+	font-weight: normal;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	background-color: #F2FBFE;
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #00B0F0;
+	border: 1px solid #00B0F0;
+}
+.accordion_style1 .card-header a[aria-expanded="false"]::after {
+	content: "\ec3a";
+}
+
+.accordion_style1 .list_style1 li {
+	margin-bottom:10px;
+}
+.accordion_style1 .list_style1 ul ul {
+	padding-left: 25px;
+}
+.accordion_style1 .list_style1 ul ul li {
+	list-style: disc;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.accordion_style1 .list_style1 li::before {
+	top: 15px;
+	width: 10px;
+	height: 10px;
+}
+.accordion_style1 .list_style1 ul ul li::before {
+	content:normal;
 }

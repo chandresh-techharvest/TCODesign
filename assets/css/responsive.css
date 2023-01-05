@@ -757,6 +757,10 @@ div.banner_large_pad {
 	margin-bottom:0;
 }
 
+.contact_list2 {
+	margin: 15px 0;
+	justify-content: center;
+}
 
 }
 
@@ -1267,6 +1271,10 @@ footer .widget_title {
 	-moz-transform: translateY(0);
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
+}
+
+.contact_list2 span {
+  font-size: 16px;
 }
 
 }
