@@ -288,7 +288,7 @@ PAGE JS
 	/*===================================*
 	11. MASONRY JS
 	*===================================*/
-	$( window ).on( "load", function() {
+	function grid_selectors() {
 		var $grid_selectors  = $(".grid_container");
 		var filter_selectors = ".grid_filter > li > a";
 		if( $grid_selectors.length > 0 ) {
@@ -315,8 +315,8 @@ PAGE JS
 	
 		//isotope filter
 		$(document).on( "click", filter_selectors, function() {
-			$(filter_selectors).removeClass("current");
-			$(this).addClass("current");
+			$(filter_selectors).removeClass("active");
+			$(this).addClass("active");
 			var dfselector = $(this).data('filter');
 			if ($grid_selectors.hasClass("masonry")){
 				$grid_selectors.isotope({
@@ -350,8 +350,11 @@ PAGE JS
 				$grid_selectors.isotope('layout');
 			}, 300);
 		});
+	}
+	$( window ).on( "load", function() {
+		grid_selectors()
 	});
-	
+
 	$('.link_container').each(function () {
 		$(this).magnificPopup({
 			delegate: '.image_popup',
@@ -432,6 +435,36 @@ PAGE JS
 		carousel_slider();
 		slick_slider();
 	});
+	
+	
+	/*load more button*/
+		var initShow = $('.loadmore').data('item'); //number of items loaded on init & onclick load more button
+		var show = $('.loadmore').data('item-show');
+	
+		var size_item = $('.loadmore [class*="item-show"]').length;
+		var v = initShow;
+		$('.loadmore [class*="item-show"]').hide(); // hide all divs with class `listing`
+		$('.loadmore [class*="item-show"]:lt(' + v + ')').show();
+	
+		if ($('.loadmore [class*="item-show"]').length > initShow) {
+	
+		} else {
+			$("#load_more, .load_more").hide();
+		}
+	
+		$('#load_more, .load_more').click(function () {
+			v = (v + show <= size_item) ? v + show : size_item;
+			$('.loadmore [class*="item-show"]:lt(' + v + ')').show();
+			// hide load more button if all items are visible
+			var message = $('.loadmore').data('finish-message');
+			if ($(".loadmore [class*='item-show']:visible").length >= size_item) {
+				$("#load_more, .load_more").hide();
+				$('.load_more_wrap').append("<span class='alert alert-info'>" + message + "</span>");
+			}
+			
+			grid_selectors()
+	
+		});
 
 	
 	/*===================================*

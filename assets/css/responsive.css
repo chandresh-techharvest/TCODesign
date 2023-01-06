@@ -205,8 +205,7 @@
 p {
 	line-height: 22px;
 }
-.heading_s1 h2,
-.flex_title h2, .tco__partners-wrapper h2 {
+.heading_s1 h2, .flex_title h2, .tco__partners-wrapper h2 {
   font-size: 36px;
 }
 .heading_s1 h3 {
@@ -234,6 +233,9 @@ p {
 }
 .h5, h5 {
     font-size: 18px;
+}
+.accordion.accordion_style1 .card-header a {
+	font-size:22px;
 }
 .section {
 	padding: 80px 0;
@@ -823,6 +825,22 @@ p{
 	font-size: 28px;
 }
 
+.mt_30 {
+	margin-top:15px;
+}
+.mb_30 {
+	margin-bottom:15px;
+}
+
+.accordion.accordion_style1 .card-header a {
+	font-size:18px;
+}
+.accordion_style1 .card-header a::after {
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
 .large_text p, .large_text a, .slide_section .slide_content ul li, .btn-link, .slide_section .slide_content p,.right_popup .side_popup_content .side_popup_description p, .debt_rating_list ul li, .large_text li, 
 .file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p {
 	font-size: 16px;
@@ -1326,6 +1344,9 @@ footer .widget_title {
 .large_text li,
 .slide_section .slide_content ul li {
 	font-size: 16px;
+}
+.accordion.accordion_style1 .card-header a {
+	font-size:16px;
 }
 .btn-link {
 	font-size: 16px;
@@ -2181,3 +2202,4 @@ footer .widget_title,
 }
 
 }
+

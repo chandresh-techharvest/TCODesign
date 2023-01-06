@@ -94,6 +94,12 @@ video {
 .section.pb_40, .pb_40 {
 	padding-bottom: 40px;
 }
+.mt_30 {
+	margin-top:30px;
+}
+.mb_30 {
+	margin-bottom:30px;
+}
 div.banner_large_pad {
 	padding: 200px 0;
 }
@@ -7554,4 +7560,36 @@ blockquote p:last-child {
 }
 .accordion_style1 .list_style1 ul ul li::before {
 	content:normal;
+}
+
+.list_normal ul {
+	padding-left:22px;
+}
+
+
+.reports_docs .card_content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+
+
+.news_list .tco_new_box{
+	background-color:#fff;
+	min-height: 158px;
+}
+.news_list .card_box .card_img img {
+	height: 208px;
+	object-fit: cover;
+}
+.news_list .tco_new_box .card_content {
+	padding:15px;
+}
+
+.gutter_medium .n_card .tco_new_box {
+	margin-bottom:30px;
+}
+.grid_col3 > li.big_size {
+	width:66.66%;
 }
