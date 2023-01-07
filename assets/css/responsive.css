@@ -975,7 +975,8 @@ p{
 	padding-left: 60px;
 }
 .grid_col4 > li,
-.grid_col3 > li {
+.grid_col3 > li,
+.grid_col3 > li.big_size {
 	width: 50%;
 }
 .banner_half_content {
@@ -1848,7 +1849,8 @@ footer .widget_title,
 }
 .grid_col2 > li,
 .grid_col4 > li,
-.grid_col3 > li {
+.grid_col3 > li,
+.grid_col3 > li.big_size {
 	width: 100%;
 }
 .grid_filter li a {
