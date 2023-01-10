@@ -481,6 +481,8 @@ PAGE JS
 		midClick: true,
 		preloader: true,
 		removalDelay: 400,
+		closeBtnInside:true,
+    	autoFocusLast: true,
 		mainClass: 'mfp-zoom-in right_popup mfp-fade',
 	});
 	
@@ -659,6 +661,17 @@ PAGE JS
 		  }).trigger('scroll');
 		});	
 		};
+	});	
+	
+	
+	$(function() {
+		$('.checkbox_click').click(function() {
+			if ($(this).is(':checked')) {
+				$('.remove_disabled').removeAttr('disabled');
+			} else {
+				$('.remove_disabled').attr('disabled', 'disabled');
+			}
+		});
 	});	
 	
 })(jQuery);

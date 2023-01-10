@@ -377,6 +377,14 @@ p {
 	line-height: 1.1;
 }
 
+.statistic_box3 {
+	display: flex;
+	flex-direction: row;
+}
+.statistic_box3 img:last-child {
+	margin-left: 30px;
+}
+
 }
 
 
@@ -764,6 +772,34 @@ div.banner_large_pad {
 	justify-content: center;
 }
 
+
+.statistic p {
+	font-size: 20px;
+}
+.statistic_box3 img {
+	width: 50%;
+}
+.statistic_box3 img:last-child {
+	margin-left: 15px;
+}
+
+.map_overlay .blue {
+	top: 34%;
+	left: 19%;
+}
+.map_overlay .yellow {
+	top: 21.5%;
+	left: 40%;
+}
+.map_overlay .golub {
+	top: 22%;
+	left: 63%;
+}
+.map_overlay .grey {
+	top: 47.5%;
+	left: 73.5%;
+}
+
 }
 
 
@@ -842,7 +878,7 @@ p{
 	line-height: 30px;
 }
 .large_text p, .large_text a, .slide_section .slide_content ul li, .btn-link, .slide_section .slide_content p,.right_popup .side_popup_content .side_popup_description p, .debt_rating_list ul li, .large_text li, 
-.file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p {
+.file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p, .large_text .custom-control, .large_text .custom-control label {
 	font-size: 16px;
 }
 
@@ -1275,7 +1311,11 @@ footer .widget_title {
 	line-height: 1.2;
 	margin-bottom: 30px;
 }
-
+.right_popup .side_popup_content .side_popup_name h3 {
+	font-size: 28px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
 .slide_section .nav_style8.owl-theme .owl-nav {
 	position: static;
 }
@@ -1294,6 +1334,35 @@ footer .widget_title {
 
 .contact_list2 span {
   font-size: 16px;
+}
+
+.career_box.reverse {
+	flex-direction: column !important;
+	justify-content: flex-start !important;
+}
+.statistic {
+	margin-top: 0;
+}
+.statistic_box3 img {
+	width: auto;
+}
+.map_overlay .blue, .map_overlay .yellow, .map_overlay .golub, .map_overlay .grey {
+	width:20px;
+}
+.map_overlay .blue {
+	top: 40%;
+	left: 22%;
+}
+.map_overlay .yellow {
+	top: 30.5%;
+	left: 44%;
+}
+.map_overlay .grey {
+	top: 49.5%;
+	left: 74.5%;
+}
+.statistic p {
+	font-size: 16px;
 }
 
 }
@@ -1336,10 +1405,17 @@ footer .widget_title {
 	font-size: 22px;
 	line-height: normal;
 }
+.right_popup .side_popup_content .side_popup_header .side_popup_number,
+.right_popup .side_popup_content .side_popup_name h2 {
+	font-size:24px;
+}
+.right_popup .side_popup_content .side_popup_name h3 {
+	font-size: 22px;
+}
 .heading_s1 h5 {
 	font-size: 16px;
 }
-.large_text p, .large_text a {
+.large_text p, .large_text a, .large_text .custom-control, .large_text .custom-control label {
 	font-size: 16px;
 }
 .large_text li,

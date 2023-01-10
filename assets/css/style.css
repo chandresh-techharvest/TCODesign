@@ -601,7 +601,7 @@ button:focus {
 	background-color: #FFF1F1 !important;
 }
 .bg_dark {
-	background-color: #0F1932 !important;
+	background-color: #015467 !important;
 }
 .bg_dark2 {
 	background-color: #131d24 !important;
@@ -839,10 +839,10 @@ button:focus {
         transform:scale(0)
     }
     50%{
-        opacity:0.5;
+        opacity:1;
     }
 	100%{
-        opacity:0;
+        opacity:1;
         -webkit-transform:scale(1);
         transform:scale(1)
     }
@@ -854,7 +854,7 @@ button:focus {
         transform:scale(0)
     }
     50%{
-        opacity:0.5;
+        opacity:1;
     }
 	100%{
         opacity:0;
@@ -868,7 +868,7 @@ button:focus {
 	background-color: rgba(255,255,255,0.5);
 }
 .btn-ripple-white .ripple {
-	color: #ed1c24;
+	color: #ffffff;
 }
 
 .bg_transparent_20 {
@@ -902,7 +902,7 @@ button:focus {
 }
 .heading_s1 h1,
 .heading_s1 h2.h1 {
-	font-size:56px;
+	font-size:54px;
     padding-left: 20px;
 	line-height: 1.2;
 }
@@ -943,6 +943,10 @@ button:focus {
 }
 .heading_s1.text-center h2 {
 	display: inline-block;
+}
+.heading_s1 h3 {
+	line-height:32px;
+	margin-bottom: 15px;
 }
 .heading_s1 h5 {
 	font-size: 18px;
@@ -4978,7 +4982,7 @@ ul.widget_links {
 	font-weight: bold;
 	line-height: normal;
 }
-.page_title_light *, .page_title_light .breadcrumb-item, .page_title_light .breadcrumb-item::before {
+.page_title_light *, .page_title_light .breadcrumb-item, .page_title_light .breadcrumb-item::before, .page_title_light .breadcrumb .breadcrumb-item.active {
 	color: #fff;
 }
 .breadcrumb {
@@ -7263,6 +7267,11 @@ blockquote p:last-child {
 	margin-bottom: 40px;
 	padding-top: 30px;
 }
+.right_popup .side_popup_content .side_popup_name h3 {
+	font-size: 38px;
+	margin-bottom: 40px;
+	padding-top: 30px;
+}
 .right_popup .side_popup_content .side_popup_description h3 {
 	color: #30454e;
 }
@@ -7612,7 +7621,8 @@ blockquote p:last-child {
 	overflow: hidden;
 }
 
-.news_container {
+.news_container,
+.small_container  {
 	max-width:980px;
 	margin:0 auto;
 }
@@ -7626,4 +7636,236 @@ blockquote p:last-child {
 .news_content img {
 	width:100%;
 	margin-bottom:25px;
+}
+
+
+
+.republic_map {
+	text-align: center;
+	position: relative;
+}
+.republic_map svg path:hover {
+	cursor: pointer;
+	fill: #447a85;
+}
+#disclaimer-popup {
+	position: relative;
+	background-color: #FFF;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;  
+}
+
+.card_date {
+	margin-bottom:15px;	
+}
+.card_date i {
+	font-size: 28px;
+	color: #5E8698;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.card_date p {
+	font-size: 14px;
+	color: #5E8698;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+.card_time .heading_s1 {
+	margin-bottom:8px;
+}
+
+.kazakhstani_cards {
+	padding: 30px;
+	background-color: #f2f4f7;
+	box-shadow: 0px 10px 30px rgba(138, 149, 158, 0.1);
+}
+.kazakhstani_cards.dark {
+	background-color: #015467;
+}
+.kazakhstani_cards.dark .card_icon{
+	background-color: #a2b9c0;
+}
+.kazakhstani_cards.dark *,
+.kazakhstani_cards.dark .card_icon .card_num,
+.kazakhstani_cards.dark .card_title h5,
+.kazakhstani_cards.dark .card_description p {
+	color:#fff;
+}
+.kazakhstani_cards .card_icon {
+	position: relative;
+	margin: 0 auto 20px;
+	width: 156px;
+	height: 156px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kazakhstani_cards .card_icon .card_num {
+	font-size: 48px;
+	font-weight: 700;
+	position: absolute;
+	bottom: 0;
+	left: -30px;
+	color: #015467;
+}
+.kazakhstani_cards .card_title h5 {
+	font-size:18px;
+}
+.kazakhstani_cards .card_description p {
+	font-size:14px;
+	line-height: 20px;
+}
+.kazakhstani_cards .card_description ul {
+	padding-left: 22px;
+}
+.kazakhstani_cards .card_description ul li{
+	font-size: 14px;
+}
+
+.small_margin li,
+.slide_section .slide_content .small_margin li {
+	margin-bottom:6px;
+	line-height: normal;
+}
+
+.career_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	filter: drop-shadow(0 6px 30px rgba(48,69,78,.1));
+	border-radius: 4px;
+	height: 100%;
+}
+.career_box img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.career_box .card_content {
+	background-color:#fff;
+}
+.career_box .card_content h3 {
+	color:#5E8698;
+	margin-bottom:12px;
+}
+.career_box .card_content ul {
+	margin-left: 22px;
+	margin-top: 10px;
+}
+.career_box .card_content p,
+.career_box .card_content ul li {
+	margin-bottom:0;
+	font-size:16px;
+}
+.career_box.reverse {
+	flex-direction: column-reverse !important;
+	justify-content: flex-end !important;
+}
+
+.map_overlay {
+	position: relative;
+	width: 100%;
+}
+
+.map_overlay .blue, .map_overlay .yellow, .map_overlay .golub, .map_overlay .grey  {
+	position: absolute;
+	-webkit-animation: ripple 2s linear infinite;
+    -moz-animation: ripple 2s linear infinite;
+    -o-animation: ripple 2s linear infinite;
+    -ms-transition: ripple 2s linear infinite;
+	animation: ripple 2s linear infinite;
+}
+.map_overlay .blue {
+	top: 36%;
+	left: 20%;
+}
+.map_overlay .yellow {
+	top: 26.5%;
+	left: 42%;
+}
+.map_overlay .golub {
+	top: 25%;
+	left: 64%;
+}
+.map_overlay .grey {
+	top: 49.5%;
+	left: 75.5%;
+}
+
+.statistic{
+	position: relative;
+	width: 100%;
+	margin-top: -100px;
+	z-index: 1;
+}
+.statistic p {
+	font-weight: 700;
+	font-size: 24px;
+}
+.statistic_box p:first-of-type {
+	color: #015467;
+}
+.statistic_box p:last-of-type {
+	color: #ffc000;
+}
+.statistic_box2 p:first-of-type {
+	color: #00b0f0;
+}
+.statistic_box2 p:last-of-type {
+	color: #8c9fa6;
+}
+.statistic_box3 img:last-child {
+	margin-left: 73px;
+}
+
+.step_tab .breadcrub_tag {
+	padding: 10px 20px;
+}
+.step_tab span {
+	line-height: 46px;
+	font-size: 26px;
+	margin-right: 10px;
+	margin-left: 5px;
+	color: #5E8698;
+}
+.conditions_small_info {
+	width: 100%;
+	background: #f2f6f7;
+	padding: 40px;
+	margin-top: 40px;
+}
+.conditions_small_info p {
+	margin-bottom:6px;
+}
+.conditions_small_info ul {
+	margin-left: 30px;
+}
+.conditions_small_info ul li {
+	font-weight: bold;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	border-color: #015467;
+	background-color: #015467;
+}
+.right_popup .side_popup_content .side_popup_description .condition_quiz p {
+	margin-bottom: 15px;
+}
+.condition_quiz .custom-control-label {
+	color: #30454E;
+}
+
+.alert_red * {
+	color:#D01D12;
+}
+
+.large_text .custom-control, .large_text .custom-control label {
+	font-size: 20px;
+	color: #30454E;
 }
