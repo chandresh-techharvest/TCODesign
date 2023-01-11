@@ -878,7 +878,7 @@ p{
 	line-height: 30px;
 }
 .large_text p, .large_text a, .slide_section .slide_content ul li, .btn-link, .slide_section .slide_content p,.right_popup .side_popup_content .side_popup_description p, .debt_rating_list ul li, .large_text li, 
-.file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p, .large_text .custom-control, .large_text .custom-control label {
+.file_group .pdf-link, .tco_icon_box .tco_icon_text p, .tco__partners-wrapper p, .widget_links li a, footer p, .large_text .custom-control, .large_text .custom-control label, .respond .action p {
 	font-size: 16px;
 }
 
@@ -1417,6 +1417,10 @@ footer .widget_title {
 }
 .large_text p, .large_text a, .large_text .custom-control, .large_text .custom-control label {
 	font-size: 16px;
+}
+.respond .action p {
+	font-size:14px;
+	line-height:normal;
 }
 .large_text li,
 .slide_section .slide_content ul li {
