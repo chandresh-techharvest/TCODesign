@@ -800,6 +800,18 @@ div.banner_large_pad {
 	left: 73.5%;
 }
 
+.overflow_img {
+	left: calc(var(--width-container)/2 - 50vw - 15px);
+	width: 100vw;
+}
+.overflow_img img {
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	margin-bottom: 20px;
+}
+
+
 }
 
 
@@ -1364,6 +1376,16 @@ footer .widget_title {
 .statistic p {
 	font-size: 16px;
 }
+
+
+.overflow_img {
+	left: 0;
+	width: 100%;
+}
+.overflow_img img {
+	width: 100%;
+}
+
 
 }
 
