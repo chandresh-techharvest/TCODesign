@@ -1255,6 +1255,9 @@ button:focus {
 	vertical-align: top;
 	margin: 0;
 }
+.header_wrap .navbar-brand img {
+	max-height: 70px;
+}
 .dark_skin .logo_light, .dark_skin .logo_default,
 .light_skin .logo_default, .light_skin .logo_dark,
 .logo_light,.logo_dark {
@@ -1746,6 +1749,7 @@ body header .cart_count {
 	display: inline-block;
 	vertical-align: top;
 }
+
 .navbar-nav .dropdown-menu.cart_box {
 	width: 320px;
 	position: absolute !important;
@@ -2512,6 +2516,7 @@ input.text {
 .banner_section {
 	position: relative;
 }
+
 .banner_content_wrap {
 	position: relative;
 	z-index: 1;
@@ -6952,13 +6957,17 @@ blockquote p:last-child {
 	font-size:38px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .double_banner_section .owl-dots {
 	position: absolute;
 	bottom: 20px;
 	left: calc(50vw - 570px);
+}
+.double_banner_section .container .owl-dots,
+.double_banner_section2 .container .nav_style8.owl-theme .owl-nav {
+	left: 65px;
 }
 
 .bg_left::after {
@@ -7182,7 +7191,7 @@ blockquote p:last-child {
 }
 .slide_section .slide_content {
 	min-width: 50%;
-	padding: 80px 60px 80px calc(50vw - var(--width-container)/2 + 15px);
+	padding: 80px 60px 80px 0;
 	overflow: hidden;
 	position: relative;
 }
@@ -7222,7 +7231,7 @@ blockquote p:last-child {
 }
 
 .slide_section.reverse .slide_content  {
-	padding: 80px calc(50vw - var(--width-container)/2 + 15px) 80px 60px;
+	padding: 80px 0 80px 60px;
 }
 
 
@@ -7422,7 +7431,7 @@ blockquote p:last-child {
 }
 .slide_section .tab-content {
 	position: absolute;
-	top: 50%;
+	top: 15%;
 	right: 15px;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -7788,7 +7797,7 @@ blockquote p:last-child {
 	width: 100%;
 }
 
-.map_overlay .blue, .map_overlay .yellow, .map_overlay .golub, .map_overlay .grey  {
+.map_overlay .blue, .map_overlay .yellow, .map_overlay .golub, .map_overlay .grey, .map_overlay .grey2   {
 	position: absolute;
 	-webkit-animation: ripple 2s linear infinite;
     -moz-animation: ripple 2s linear infinite;
@@ -7796,21 +7805,28 @@ blockquote p:last-child {
     -ms-transition: ripple 2s linear infinite;
 	animation: ripple 2s linear infinite;
 }
+.map_overlay .map_back {
+	width: 100%;
+}
 .map_overlay .blue {
-	top: 36%;
-	left: 20%;
+	top: 34%;
+	left: 15%;
 }
 .map_overlay .yellow {
-	top: 26.5%;
-	left: 42%;
+	top: 24.5%;
+	left: 43%;
 }
 .map_overlay .golub {
-	top: 25%;
+	top: 31%;
 	left: 64%;
 }
 .map_overlay .grey {
 	top: 49.5%;
-	left: 75.5%;
+	left: 71.9%;
+}
+.map_overlay .grey2 {
+	top: 72.5%;
+	left: 80.5%;
 }
 
 .statistic{
@@ -7837,6 +7853,22 @@ blockquote p:last-child {
 }
 .statistic_box3 img:last-child {
 	margin-left: 73px;
+}
+
+.statistic_box .aust {
+	color: #b24e8d;
+}
+.statistic_box .us {
+	color: #015467;
+}
+.statistic_box .uk {
+	color: #ffc000;
+}
+.statistic_box .kz {
+	color: #00b0f0;
+}
+.statistic_box .thai {
+	color: #01bf89;
 }
 
 .step_tab .breadcrub_tag {
@@ -8231,3 +8263,82 @@ blockquote p:last-child {
 
 
 
+.slider__flex .swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+}
+.slider__flex .swiper-slide {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+}
+.slider__flex .swiper-container-vertical  > .swiper-wrapper {
+	flex-direction: column;
+}
+.slider__flex .swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.slider__flex .swiper-slide {
+	padding: 20px;
+}
+.slider__thumbs {
+	/*height: calc(400px - 96px);*/
+}
+.slider__flex {
+	max-height: 700px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+.slider__flex .year {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 11.625rem;
+	line-height: 224px;
+	color: #015467;
+	opacity: .3;
+}
+.slider__flex .year-small {
+	font-size: 120px;
+}
+
+.slider__flex .swiper-slide-active h2 {
+	opacity: 1;
+	position: relative;
+	z-index: 20;
+}
+.slider__flex .swiper-slide-active h2::before {
+	position: absolute;
+	content: "";
+	top: -40px;
+	right: -20px;
+	width: 294px;
+	height: 294px;
+	border: 3px solid #015467;
+	z-index: 10px;
+	background-color: rgba(94,134,152,.2);
+	border-radius: 50%;
+	opacity: 1;
+	animation: fadeIn-2a53427a .6s linear;
+}
+
+
+.slider__flex .history {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-gap: 20px;
+	gap: 20px;
+	max-width: 600px;
+}

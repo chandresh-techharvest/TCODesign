@@ -677,3 +677,49 @@ PAGE JS
 })(jQuery);
 
 
+
+
+
+//slider
+const sliderThumbs = new Swiper('.yearSwiper', { 
+
+	direction: 'vertical', 
+	slidesPerView: 3, 
+	spaceBetween: 30, 
+	centeredSlides: true,
+	ousewheel: true, 
+	watchSlidesProgress: true,
+	breakpoints: { 
+		0: { 
+			slidesPerView: 1, 
+			centeredSlides: false,
+			direction: 'horizontal', 
+		},
+		991: { 
+			slidesPerView: 3, 
+		},
+		768: { 
+			slidesPerView: 4, 
+			direction: 'vertical', 
+		}
+	}
+});
+
+const sliderImages = new Swiper('.mySwiper', { 
+
+	direction: 'vertical', 
+	slidesPerView: 1, 
+	spaceBetween: 30, 
+	mousewheel: true, 
+	thumbs: { 
+		swiper: sliderThumbs 
+	},
+	breakpoints: { 
+		0: { 
+			direction: 'horizontal', 
+		},
+		768: {
+			direction: 'vertical', 
+		}
+	}
+});
