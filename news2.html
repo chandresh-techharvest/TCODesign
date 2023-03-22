@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SITE TITLE -->
+<title>TCO - TCO News</title>
+
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">	
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/linearicons.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/slick-theme.css">
+
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div class="preloader">
+	<div class="loader-section section-top"></div>
+    <div class="lds-ellipsis">
+    	<span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="loader-section section-bottom"></div>
+</div>
+<!-- END LOADER --> 
+
+<!-- START HEADER -->
+<header class="header_wrap fixed-top dark_skin sticky_dd_light_skin dd_light_skin main_menu_weight_400">
+	<div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-1 col-md-2 col-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo_light" src="assets/images/LogoTCO.png" alt="logo" />
+                        <img class="logo_dark" src="assets/images/LogoTCO.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-5 col-2">
+                    <div class="search_wraps">
+                    	<span class="close-search"><i class="ion-ios-close-empty"></i></span>
+                        <form>
+                            <input type="text" placeholder="Search" class="form-control" id="search_input">
+                            <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
+                        </form>
+					</div>
+                </div>
+                
+                <div class="col-lg-4 col-md-5 col-7">
+                	<div class="d-flex align-items-center justify-content-end">
+                    
+                    	<ul class="lng_dropdown header_list">
+                            <li><a href="#"> Рус </a></li>
+                            <li><a href="#"> Қаз </a></li>
+                            <li class="active"><a href="#"> Eng </a></li>
+						</ul>
+                        
+                        <ul class="mobile_block header_list">
+                            <li>
+                                <div class="lng_dropdown">
+                                  <select name="countries" id="lng_select">
+                                    <option value='en' data-title="English">EN</option>
+                                    <option value='fn' data-title="France">FN</option>
+                                    <option value='us' data-title="United States">US</option>
+                                  </select>
+                                </div>
+                            </li>
+                            <li><a href="javascript:void(0);" class="search_trigger"><i class="ion-ios-search-strong"></i></a></li>
+                        </ul>
+                                   
+                        <nav class="navbar navbar-expand-lg"> 
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"> 
+                            	<span class="ion-android-menu"></span>
+                        	</button>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg"> 
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo_light" src="assets/images/LogoTCO.png" alt="logo" />
+                    <img class="logo_dark" src="assets/images/LogoTCO.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"> 
+                <span class="ion-android-menu"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                    	<li>
+                            <a class="nav-link nav_item" href="#"> Home  </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Company </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Operations </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Projects </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Kazakhstani Content </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Sustainability </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Career </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#"> Lender Relations </a>
+                        </li>
+
+                     </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<!-- START SECTION BREADCRUMB -->
+<div class="section pt_40 pb-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">  TCO News </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SECTION BREADCRUMB -->
+
+
+<div class="section pt_20 pb_20">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="heading_s1">
+                    <h1> TCO News </h1>
+                </div>
+                <div class="breadcrub_tag_wrap">
+                	
+                    <ul class="nav breadcrub_tag_wrap grid_filter">
+                    	<li class="nav-item">
+                            <a class="breadcrub_tag all active" data-filter="*" href="#"> All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".Production" href="#"> Production</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".Ecology" href="#"> Ecology </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".Socialprojects" href="#"> Social projects </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".Kazakhstanicontent" href="#"> Kazakhstani content </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".Career" href="#"> Career </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="breadcrub_tag" data-filter=".FGP" href="#"> FGP-WPMP </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+<!-- START News --> 
+<div class="section news_section bg_light_grey2">
+    <div class="container">
+    	<div class="row">
+        	<div class="col-md-4">
+            	<ul class="news_list grid_col1 gutter_medium grid_container masonry">
+                    <li class="grid-sizer"></li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 27 October 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> OIL AND GAS COMPANIES DRIVE DIVERSITY AND INCLUSION PRINCIPLES ACROSS ... </a></h5>
+                                <p class="oneline"> October 27, 2022, ATYRAU – Tengizchevroil (TCO) an... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Production">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Production </span>
+                                    <span> 09 December 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> The special "Paryz" prize was awarded to Tengizchevroil </a></h5>
+                                <p class="oneline"> Tengizchevroil (TCO) was the winner of a special a... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 26 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> A 3,000-seat central stadium was opened in Kulsary </a></h5>
+                                <p class="oneline"> A new central stadium for 3,000 seats was opened i... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 20 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> TENGIZCHEVROIL IMPROVES WASTE MANAGEMENT SYSTEM AT TENGIZ FIELD </a></h5>
+                                <p class="oneline"> Tengizchevroil (TCO) recently held a Waste Managem... </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-8">
+            	<ul class="news_list grid_col2 gutter_medium grid_container masonry">
+                    <li class="grid-sizer"></li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 04 October 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> 30% of middle managers at Tengizchevroil are women </a></h5>
+                                <p class="oneline"> On the sidelines of the World Petroleum Council Yo... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 28 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil participated in KIOGE-2022 </a></h5>
+                                <p class="oneline"> The 28th International Oil and Gas Exhibition and ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show big_size Ecology">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/Ecology.jpg" alt="Ecology">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="orange"> #Ecology </span>
+                                    <span> 02 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil helps save the Caspian seal </a></h5>
+                                <p class="oneline"> On September 1, 2022, a new expedition within the ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+                <ul class="news_list grid_col3 gutter_medium grid_container masonry loadmore" data-item="0" data-item-show="3" data-finish-message="No More Item to Show">
+                    <li class="grid-sizer"></li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 27 October 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> OIL AND GAS COMPANIES DRIVE DIVERSITY AND INCLUSION PRINCIPLES ACROSS ... </a></h5>
+                                <p class="oneline"> October 27, 2022, ATYRAU – Tengizchevroil (TCO) an... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 04 October 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> 30% of middle managers at Tengizchevroil are women </a></h5>
+                                <p class="oneline"> On the sidelines of the World Petroleum Council Yo... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/TCO-news.jpg" alt="TCO-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 28 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil participated in KIOGE-2022 </a></h5>
+                                <p class="oneline"> The 28th International Oil and Gas Exhibition and ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Production">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Production </span>
+                                    <span> 09 December 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> The special "Paryz" prize was awarded to Tengizchevroil </a></h5>
+                                <p class="oneline"> Tengizchevroil (TCO) was the winner of a special a... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 26 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> A 3,000-seat central stadium was opened in Kulsary </a></h5>
+                                <p class="oneline"> A new central stadium for 3,000 seats was opened i... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Ecology">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/Ecology.jpg" alt="Ecology">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="orange"> #Ecology </span>
+                                    <span> 02 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil helps save the Caspian seal </a></h5>
+                                <p class="oneline"> On September 1, 2022, a new expedition within the ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 20 September 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> TENGIZCHEVROIL IMPROVES WASTE MANAGEMENT SYSTEM AT TENGIZ FIELD </a></h5>
+                                <p class="oneline"> Tengizchevroil (TCO) recently held a Waste Managem... </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="n_card grid_item item item-show Career">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="skyblue"> #Career </span>
+                                    <span> 24 August 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> TCO – relentless in improving emissions performance </a></h5>
+                                <p class="oneline">  Protecting people and the environment remains TCO'... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 15 August 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Minister of energy undertakes visit to Tengiz field </a></h5>
+                                <p class="oneline"> As part of his working trip to the Atyrau Region, ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 02 August 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> The Head of KMG visited the Third Generation Plant at Tengiz </a></h5>
+                                <p class="oneline"> Magzum Myrzagaliyev, the Chairman of the Managemen... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 20 July 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> T. Duissenova, S. Shapkenov and K. Lyon signed FGP-WPMP demobilization... </a></h5>
+                                <p class="oneline"> As part of a working trip to Atyrau oblast, Tamara... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 20 July 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> To all World Wide Web Users</a></h5>
+                                <p class="oneline"> Tengizchevroil (TCO) is aware of false information... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 14 July 2022</span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Kamshat Baizhanova: be competitive not inside, but outside the company </a></h5>
+                                <p class="oneline"> Building values and an open corporate environment ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Production">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Production </span>
+                                    <span> 09 June 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil is exploring domestic IT companies' capabilities </a></h5>
+                                <p class="oneline"> "Digital Tengizchevroil-2022" Forum was held in Al... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show FGP">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #FGP-WPMP </span>
+                                    <span> 03 June 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> TCO's FGP-WPMP Achieves Another Major Milestone </a></h5>
+                                <p class="oneline"> June 3, 2022, ATYRAU – Tengizchevroil's (TCO) Futu... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 26 May 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil showcases technical leadership at International Geologi... </a></h5>
+                                <p class="oneline"> During the "Carbonate Basins of Kazakhstan and Adj... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 19 May 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil Announces Upcoming Changes To Leadership Team </a></h5>
+                                <p class="oneline"> ATYRAU, May 19, 2022 – Tengizchevroil (TCO) announ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Kazakhstanicontent">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="red"> #Kazakhstani content </span>
+                                    <span> 18 May 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil creates conditions for import substitution </a></h5>
+                                <p class="oneline"> Within the framework of the "Oil and Gas Machinery... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Socialprojects">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="purple"> #Social projects </span>
+                                    <span> 03 May 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil in search of the best digital product </a></h5>
+                                <p class="oneline"> Tengizchevroil LLP, in search of the best digital ... </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="n_card grid_item item item-show Socialprojects">
+                        <div class="card_box tco_new_box">
+                            <div class="card_img">
+                                <a href="#">
+                                    <img src="assets/images/career-news.jpg" alt="career-news">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="cat_date">
+                                    <span class="purple"> #Social projects </span>
+                                    <span> 13 April 2022 </span>
+                                </div>
+                                <h5 class="oneline"> <a href="#"> Tengizchevroil to continue to work with Kulsary residents to support l... </a></h5>
+                                <p class="oneline"> Kevin Lyon, General Director of Tengizchevroil LL... </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        	</div>
+		</div>
+          
+        <div class="row">
+            <div class="col-12 text-center load_more_wrap pt_40">
+                <button id="load_more" class="btn btn-fill-out"> Load More </button>
+            </div>
+        </div>         
+	</div>
+</div>                        
+<!-- END News -->
+
+
+
+
+<!-- START SECTION Publication --> 
+<div class="section bg_light_grey">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 flex_title">
+                	<h2> Publication </h2>
+                    <a class="btn-link" href="#"> All Publications  </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+            	<div class="card_box tco_new_box">
+                	<div class="card_img">
+                        <a href="#">
+                            <img src="assets/images/company/publications1.jpg" alt="publications">
+                        </a>
+                    </div>
+                    <div class="card_content">
+                    	<a class="pdf-link" href="#"> <span><img src="assets/images/pdf.png" alt="pdf"></span> Corporate Responsibility Report 2019-20 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+            	<div class="card_box tco_new_box">
+                	<div class="card_img">
+                        <a href="#">
+                            <img src="assets/images/company/publications2.jpg" alt="publications">
+                        </a>
+                    </div>
+                    <div class="card_content">
+                    	<a class="pdf-link" href="#"> <span><img src="assets/images/pdf.png" alt="pdf"></span> Results of 2019 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+            	<div class="card_box tco_new_box">
+                	<div class="card_img">
+                        <a href="#">
+                            <img src="assets/images/company/publications3.jpg" alt="publications">
+                        </a>
+                    </div>
+                    <div class="card_content">
+                    	<a class="pdf-link" href="#"> <span><img src="assets/images/pdf.png" alt="pdf"></span> Corporate Responsibility Report 2018 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+            	<div class="card_box tco_new_box">
+                	<div class="card_img">
+                        <a href="#">
+                            <img src="assets/images/company/publications4.jpg" alt="publications">
+                        </a>
+                    </div>
+                    <div class="card_content">
+                    	<a class="pdf-link" href="#"> <span><img src="assets/images/pdf.png" alt="pdf"></span> Results of 2018 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SECTION Publication -->
+
+
+
+
+<!-- START FOOTER -->
+<footer class="footer_dark">
+	<div class="footer_top">
+        <div class="container">
+        	<div class="row">
+                <div class="col-lg-2 col-sm-6">
+                	<div class="widget">
+                        <div class="footer_logo">
+                            <a href="#"><img src="assets/images/LogoTCOfooter.png" alt="logo"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                	<div class="widget">
+                        <ul class="widget_links">
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#">  Company </a></li>
+                            <li><a href="#"> Operations</a></li>
+                            <li><a href="#"> Kazakhstani Content</a></li>
+                            <li><a href="#"> Sustainability</a></li>
+                            <li><a href="#"> Career</a></li>
+                            <li><a href="#"> Lender Relations </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                	<div class="widget">
+                        <h6 class="widget_title"> Contacts </h6>
+                        <ul class="widget_links">
+                            <li><a href="#"> +7 712 227 1212 </a></li>
+                            <li><a href="#"> +7 712 302 6000</a></li>
+                        </ul>
+                        <p> Atyrau, Satpayev st., 3 <br> Republic of Kazakhstan 060011 </p>
+                        <ul class="widget_links">
+                            <li><a href="#">tcoinfo@tengizchevroil.com</a></li>
+                            <li><a href="#"> Helpline and other contacts</a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="widget">
+                        <ul class="social_icons rounded_social social_style2">
+                        	<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                	<div class="widget">
+                        <h6 class="widget_title">Mobile application</h6>
+                        <div class="app_logo">
+                            <a href="#"><img src="assets/images/appstore.png" alt="logo"/></a> 
+                            <a href="#"><img src="assets/images/GooglePlay.png" alt="logo"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>        
+    
+    <div class="bottom_footer p-0">
+        <div class="container">
+        	<div class="border-top-tran pt_40 pb_70">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <p class="mb-md-0 text-center text-md-left"> © 2022 Tengizchevroil LLP</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <p class="mb-md-0 text-center text-md-right"><a href="#"> Privacy Statement </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
+
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- magnific-popup min js  --> 
+<script src="assets/js/magnific-popup.min.js"></script> 
+<!-- waypoints min js  --> 
+<script src="assets/js/waypoints.min.js"></script> 
+<!-- imagesloaded js --> 
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js --> 
+<script src="assets/js/isotope.min.js"></script>
+<!-- jquery.appear js  -->
+<script src="assets/js/jquery.appear.js"></script>
+<!-- jquery.dd.min js -->
+<script src="assets/js/jquery.dd.min.js"></script>
+<!-- slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

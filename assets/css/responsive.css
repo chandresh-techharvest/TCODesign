@@ -1656,6 +1656,13 @@ footer .widget_title {
 .slider__flex .swiper-slide-active h2::before {display:none;}
 .slider__flex .swiper-year {  height: 150px !important;}
 
+.grid_col2 > li,
+.grid_col3 > li {
+	width:100%;
+}
+.news_section .col-md-4 .news_list .card_img, .news_section .col-md-12 .news_list .card_img{
+	display:block;
+}
 
 }
 
@@ -2271,12 +2278,14 @@ p {
 }
 .banner_content h2 {
 	font-size: 22px;
+	margin-top:15px;
 }
 .banner_content1 h2 {
 	font-size: 30px;
 }
 .banner_content p {
 	margin-bottom: 25px;
+	font-size:16px;
 }
 .carousel-control-next, .carousel-control-prev {
 	font-size: 16px;
